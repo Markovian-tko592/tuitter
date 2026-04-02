@@ -3,6 +3,8 @@
 `tuitter` is a terminal UI client for X (Twitter) built with TypeScript and OpenTUI.  
 It lets you authenticate with your own X account and browse or interact with content directly from the terminal.
 
+![tuitter](tuitter.png)
+
 ## Download, install, and run
 
 ### Prerequisites
